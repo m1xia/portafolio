@@ -1,0 +1,113 @@
+/**
+ * Content
+ */
+ html {
+	scroll-behavior: smooth;
+    background:transparent;
+    
+    &::-webkit-scrollbar{
+        width: 0.5rem;
+    }
+
+    &::-webkit-scrollbar-track{
+        background-color: black;
+    }
+
+    &::-webkit-scrollbar-thumb{
+        background-color: #ffffff;
+    }
+
+}
+
+
+
+    
+.mobileAbout {
+    position:fixed;
+    max-width:calc(22% - 3em);
+    padding-left: 10px;
+    padding-top: 20px;
+    
+}
+
+.box{
+    width: 220px;
+    box-shadow: 0 0 40px 2px rgba(0,0,0,0.7);
+    padding-left: 10px;
+    transition: 1s;
+}
+
+.box img{
+    display: block;
+}
+
+.box:hover{
+    transform: scale(1.3);
+    z-index: 2;
+}
+
+.links{
+    text-align: center;
+    font-size: 47px;
+    line-height: 0.7;
+    
+}
+
+[data-predefined-style="true"] bodycopy {
+	font-size: 27px;
+	color: #ffffff;
+    font-family: 'Cute Font';
+    line-height: 1;
+    text-align: center;
+}
+
+ a {
+	color: #bfa2d6;
+	padding-bottom: 0em;
+	text-decoration: none;
+}
+
+a:hover {
+
+    color:rgb(255, 0, 249);
+}
+
+/**
+ * Custom Cursor
+ */
+
+
+html {
+    cursor: url("/data/cursor.png"), auto !important;
+
+}
+a {
+    cursor: url("/data/pointer.png"), auto !important;
+
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 770px) {
+
+.mobileAbout {
+    position:relative;
+    max-width:100%;
+        margin-bottom:-2.6em;
+
+}
+.mobileFeed {
+	margin-top:auto;
+}
+    .mobileSpacer {
+	border-top:1px solid #000;
+}
+}
+
+
+
+
